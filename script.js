@@ -68,7 +68,10 @@ document.addEventListener("mousemove" , e=>{
     playerPaddle.position = (e.y/window.innerHeight)*100
 
 })
+document.addEventListener("ontouchmove" , e=>{
+    playerPaddle.position = (e.y/window.innerHeight)*100
 
+})
 
 
 //Call the update function for every time frame
