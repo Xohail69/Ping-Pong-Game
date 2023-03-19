@@ -68,9 +68,9 @@ document.addEventListener("mousemove" , e=>{
     playerPaddle.position = (e.y/window.innerHeight)*100
 
 })
-document.addEventListener("ontouchmove" , e=>{
- var x = e.touches[0].clientX;
-  var y = e.touches[0].clientY;
+document.addEventListener("touchmove" , e=>{
+ let x = e.touches[0].clientX;
+  let y = e.touches[0].clientY;
     playerPaddle.position = (y/window.innerHeight)*100
 
 })
